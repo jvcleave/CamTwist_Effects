@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		346CB7A3153C954800ABC280 /* EmptyEffect.mm in Sources */ = {isa = PBXBuildFile; fileRef = 346CB7A0153C954800ABC280 /* EmptyEffect.mm */; };
+		A6A1C6570BB4AEAD000C1A42 /* Matrix.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6A1C6550BB4AEAD000C1A42 /* Matrix.mm */; };
+		A6A1C6580BB4AEAD000C1A42 /* matrixFont.xpm in Resources */ = {isa = PBXBuildFile; fileRef = A6A1C6560BB4AEAD000C1A42 /* matrixFont.xpm */; };
+		A6A9B40813AE82D4000FCF8E /* CTVNC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A9B40713AE82D4000FCF8E /* CTVNC.xib */; };
+		A6BFA29813AD6F7400372375 /* CTVNC-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6BFA29413AD6F7400372375 /* CTVNC-Info.plist */; };
+		A6BFA29913AD6F7400372375 /* CTVNC.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6BFA29613AD6F7400372375 /* CTVNC.mm */; };
+		A6F190290BB6C96E002A3FAB /* flame.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6F190280BB6C96E002A3FAB /* flame.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		346CB77F153C912B00ABC280 /* EmptyEffect.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmptyEffect.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		346CB780153C912B00ABC280 /* Matrix-Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Matrix-Info copy.plist"; path = "../Matrix/Matrix-Info copy.plist"; sourceTree = "<group>"; };
+		346CB79E153C954800ABC280 /* EmptyEffect-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "EmptyEffect-Info.plist"; sourceTree = "<group>"; };
+		346CB79F153C954800ABC280 /* EmptyEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyEffect.h; sourceTree = "<group>"; };
+		346CB7A0153C954800ABC280 /* EmptyEffect.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EmptyEffect.mm; sourceTree = "<group>"; };
+		346CB7A1153C954800ABC280 /* matrixFont.xpm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrixFont.xpm; sourceTree = "<group>"; };
+		A6A1C63F0BB4AD84000C1A42 /* Matrix.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Matrix.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A1C64A0BB4AE80000C1A42 /* CTContext.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CTContext.h; sourceTree = "<group>"; };
+		A6A1C64B0BB4AE80000C1A42 /* CTEffect.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CTEffect.h; sourceTree = "<group>"; };
+		A6A1C6540BB4AEAD000C1A42 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = Matrix.h; path = Matrix/Matrix.h; sourceTree = SOURCE_ROOT; };
+		A6A1C6550BB4AEAD000C1A42 /* Matrix.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; name = Matrix.mm; path = Matrix/Matrix.mm; sourceTree = SOURCE_ROOT; };
+		A6A1C6560BB4AEAD000C1A42 /* matrixFont.xpm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = matrixFont.xpm; path = Matrix/matrixFont.xpm; sourceTree = SOURCE_ROOT; };
+		A6A1C6590BB4AEB6000C1A42 /* Matrix-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; name = "Matrix-Info.plist"; path = "Matrix/Matrix-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A6A1C6610BB4AF25000C1A42 /* CTUtil.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CTUtil.h; sourceTree = "<group>"; };
+		A6A9B40713AE82D4000FCF8E /* CTVNC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CTVNC.xib; sourceTree = "<group>"; };
+		A6BFA27B13AD6F4700372375 /* CTVNC.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTVNC.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BFA27C13AD6F4800372375 /* Flame-Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Flame-Info copy.plist"; path = "Flame/Flame-Info copy.plist"; sourceTree = "<group>"; };
+		A6BFA29413AD6F7400372375 /* CTVNC-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CTVNC-Info.plist"; sourceTree = "<group>"; };
+		A6BFA29513AD6F7400372375 /* CTVNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTVNC.h; sourceTree = "<group>"; };
+		A6BFA29613AD6F7400372375 /* CTVNC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CTVNC.mm; sourceTree = "<group>"; };
+		A6F190160BB6C902002A3FAB /* Flame.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Flame.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F190170BB6C902002A3FAB /* Flame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Flame-Info.plist"; path = "Flame/Flame-Info.plist"; sourceTree = "<group>"; };
+		A6F190270BB6C96E002A3FAB /* flame.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = flame.h; path = Flame/flame.h; sourceTree = "<group>"; };
+		A6F190280BB6C96E002A3FAB /* flame.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; name = flame.mm; path = Flame/flame.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		346CB77B153C912B00ABC280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A1C63D0BB4AD84000C1A42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BFA27713AD6F4700372375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F190140BB6C902002A3FAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		346CB79D153C954800ABC280 /* EmptyEffect */ = {
+			isa = PBXGroup;
+			children = (
+				346CB79E153C954800ABC280 /* EmptyEffect-Info.plist */,
+				346CB79F153C954800ABC280 /* EmptyEffect.h */,
+				346CB7A0153C954800ABC280 /* EmptyEffect.mm */,
+				346CB7A1153C954800ABC280 /* matrixFont.xpm */,
+			);
+			path = EmptyEffect;
+			sourceTree = "<group>";
+		};
+		A6895AAD0BB6C870001113A5 /* Flame */ = {
+			isa = PBXGroup;
+			children = (
+				A6F190270BB6C96E002A3FAB /* flame.h */,
+				A6F190280BB6C96E002A3FAB /* flame.mm */,
+				A6F190170BB6C902002A3FAB /* Flame-Info.plist */,
+				A6BFA27C13AD6F4800372375 /* Flame-Info copy.plist */,
+			);
+			name = Flame;
+			sourceTree = "<group>";
+		};
+		A6A1C62A0BB4AD45000C1A42 = {
+			isa = PBXGroup;
+			children = (
+				346CB79D153C954800ABC280 /* EmptyEffect */,
+				A6BFA29213AD6F7400372375 /* CTVNC */,
+				A6895AAD0BB6C870001113A5 /* Flame */,
+				A6A1C6530BB4AE8E000C1A42 /* Matrix */,
+				A6A1C6490BB4AE80000C1A42 /* CTHeaders */,
+				A6A1C6400BB4AD84000C1A42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6A1C6400BB4AD84000C1A42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6A1C63F0BB4AD84000C1A42 /* Matrix.bundle */,
+				A6F190160BB6C902002A3FAB /* Flame.bundle */,
+				A6BFA27B13AD6F4700372375 /* CTVNC.bundle */,
+				346CB77F153C912B00ABC280 /* EmptyEffect.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6A1C6490BB4AE80000C1A42 /* CTHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				A6A1C6610BB4AF25000C1A42 /* CTUtil.h */,
+				A6A1C64A0BB4AE80000C1A42 /* CTContext.h */,
+				A6A1C64B0BB4AE80000C1A42 /* CTEffect.h */,
+			);
+			path = CTHeaders;
+			sourceTree = "<group>";
+		};
+		A6A1C6530BB4AE8E000C1A42 /* Matrix */ = {
+			isa = PBXGroup;
+			children = (
+				A6A1C6540BB4AEAD000C1A42 /* Matrix.h */,
+				A6A1C6550BB4AEAD000C1A42 /* Matrix.mm */,
+				A6A1C6560BB4AEAD000C1A42 /* matrixFont.xpm */,
+				A6A1C6590BB4AEB6000C1A42 /* Matrix-Info.plist */,
+				346CB780153C912B00ABC280 /* Matrix-Info copy.plist */,
+			);
+			name = Matrix;
+			path = CTHeaders;
+			sourceTree = "<group>";
+		};
+		A6BFA29213AD6F7400372375 /* CTVNC */ = {
+			isa = PBXGroup;
+			children = (
+				A6BFA29413AD6F7400372375 /* CTVNC-Info.plist */,
+				A6BFA29513AD6F7400372375 /* CTVNC.h */,
+				A6BFA29613AD6F7400372375 /* CTVNC.mm */,
+				A6A9B40713AE82D4000FCF8E /* CTVNC.xib */,
+			);
+			path = CTVNC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		346CB776153C912B00ABC280 /* EmptyEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 346CB77C153C912B00ABC280 /* Build configuration list for PBXNativeTarget "EmptyEffect" */;
+			buildPhases = (
+				346CB777153C912B00ABC280 /* Resources */,
+				346CB779153C912B00ABC280 /* Sources */,
+				346CB77B153C912B00ABC280 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmptyEffect;
+			productName = Matrix;
+			productReference = 346CB77F153C912B00ABC280 /* EmptyEffect.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A6A1C63E0BB4AD84000C1A42 /* Matrix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6A1C6430BB4AD84000C1A42 /* Build configuration list for PBXNativeTarget "Matrix" */;
+			buildPhases = (
+				A6A1C63B0BB4AD84000C1A42 /* Resources */,
+				A6A1C63C0BB4AD84000C1A42 /* Sources */,
+				A6A1C63D0BB4AD84000C1A42 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Matrix;
+			productName = Matrix;
+			productReference = A6A1C63F0BB4AD84000C1A42 /* Matrix.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A6BFA27313AD6F4700372375 /* CTVNC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6BFA27813AD6F4700372375 /* Build configuration list for PBXNativeTarget "CTVNC" */;
+			buildPhases = (
+				A6BFA27413AD6F4700372375 /* Resources */,
+				A6BFA27513AD6F4700372375 /* Sources */,
+				A6BFA27713AD6F4700372375 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CTVNC;
+			productName = Flame;
+			productReference = A6BFA27B13AD6F4700372375 /* CTVNC.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A6F190150BB6C902002A3FAB /* Flame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6F190180BB6C902002A3FAB /* Build configuration list for PBXNativeTarget "Flame" */;
+			buildPhases = (
+				A6F190120BB6C902002A3FAB /* Resources */,
+				A6F190130BB6C902002A3FAB /* Sources */,
+				A6F190140BB6C902002A3FAB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flame;
+			productName = Flame;
+			productReference = A6F190160BB6C902002A3FAB /* Flame.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6A1C62C0BB4AD45000C1A42 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A6A1C62D0BB4AD45000C1A42 /* Build configuration list for PBXProject "Effects" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = A6A1C62A0BB4AD45000C1A42;
+			productRefGroup = A6A1C6400BB4AD84000C1A42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6A1C63E0BB4AD84000C1A42 /* Matrix */,
+				A6F190150BB6C902002A3FAB /* Flame */,
+				A6BFA27313AD6F4700372375 /* CTVNC */,
+				346CB776153C912B00ABC280 /* EmptyEffect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		346CB777153C912B00ABC280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A1C63B0BB4AD84000C1A42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A1C6580BB4AEAD000C1A42 /* matrixFont.xpm in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BFA27413AD6F4700372375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6BFA29813AD6F7400372375 /* CTVNC-Info.plist in Resources */,
+				A6A9B40813AE82D4000FCF8E /* CTVNC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F190120BB6C902002A3FAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		346CB779153C912B00ABC280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346CB7A3153C954800ABC280 /* EmptyEffect.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A1C63C0BB4AD84000C1A42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A1C6570BB4AEAD000C1A42 /* Matrix.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BFA27513AD6F4700372375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6BFA29913AD6F7400372375 /* CTVNC.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6F190130BB6C902002A3FAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6F190290BB6C96E002A3FAB /* flame.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		346CB77D153C912B00ABC280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "/Volumes/EXTERNAL_JVC/CAMTWIST/Open Source Effects/EmptyEffect/EmptyEffect-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-flat_namespace",
+					"-undefined",
+					suppress,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = EmptyEffect;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		346CB77E153C912B00ABC280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = "../Matrix/Matrix-Info copy.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-flat_namespace",
+					"-undefined",
+					suppress,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Matrix;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A6A1C62E0BB4AD45000C1A42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				COPY_PHASE_STRIP = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Debug;
+		};
+		A6A1C62F0BB4AD45000C1A42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Release;
+		};
+		A6A1C6440BB4AD84000C1A42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "Matrix/Matrix-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-flat_namespace",
+					"-undefined",
+					suppress,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Matrix;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		A6A1C6450BB4AD84000C1A42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = "Matrix/Matrix-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-flat_namespace",
+					"-undefined",
+					suppress,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Matrix;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A6BFA27913AD6F4700372375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = "CTVNC/CTVNC-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-flat_namespace",
+					/opt/local/lib/libvncclient.a,
+					/opt/local/lib/libjpeg.a,
+					/opt/local/lib/libgcrypt.a,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CTVNC;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		A6BFA27A13AD6F4700372375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = "CTVNC/CTVNC-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-flat_namespace",
+					/opt/local/lib/libvncclient.a,
+					/opt/local/lib/libjpeg.a,
+					/opt/local/lib/libgcrypt.a,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CTVNC;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A6F190190BB6C902002A3FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "Flame/Flame-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-flat_namespace",
+					"-undefined",
+					suppress,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Flame;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		A6F1901A0BB6C902002A3FAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = "Flame/Flame-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = (
+					"-flat_namespace",
+					"-undefined",
+					suppress,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Flame;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		346CB77C153C912B00ABC280 /* Build configuration list for PBXNativeTarget "EmptyEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346CB77D153C912B00ABC280 /* Debug */,
+				346CB77E153C912B00ABC280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6A1C62D0BB4AD45000C1A42 /* Build configuration list for PBXProject "Effects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A1C62E0BB4AD45000C1A42 /* Debug */,
+				A6A1C62F0BB4AD45000C1A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6A1C6430BB4AD84000C1A42 /* Build configuration list for PBXNativeTarget "Matrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A1C6440BB4AD84000C1A42 /* Debug */,
+				A6A1C6450BB4AD84000C1A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6BFA27813AD6F4700372375 /* Build configuration list for PBXNativeTarget "CTVNC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6BFA27913AD6F4700372375 /* Debug */,
+				A6BFA27A13AD6F4700372375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6F190180BB6C902002A3FAB /* Build configuration list for PBXNativeTarget "Flame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6F190190BB6C902002A3FAB /* Debug */,
+				A6F1901A0BB6C902002A3FAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6A1C62C0BB4AD45000C1A42 /* Project object */;
+}
